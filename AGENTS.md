@@ -32,7 +32,7 @@ Read `LOCK.md` before any change. It is the frozen v0.1 lock; do not reopen plat
 - Check every title, H1 and meta description against `TITLE-BLOCKLIST.md`.
 - Do not add `llms.txt` or `llms-full.txt`. Mintlify emits them.
 - Do not restate the plan ladder. If a task must name a rung, use the frozen strings in `LOCK.md` and link to `/ecommerce`.
-- No links to `fflaccelerator.com`, `gunsearchagent.com` or `2abetsy.com`. No UTMs.
+- No links to `gunsearchagent.com` or `2abetsy.com`. Links to `fflaccelerator.com` only per DOCS-2 (offer-name anchors only, never /lp/). No UTMs.
 
 ## Hard no
 
