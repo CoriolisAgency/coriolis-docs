@@ -1,0 +1,39 @@
+---
+title: "Launch checklist"
+description: "Pre-launch checks for a Coriolis-managed WooCommerce store before the domain goes live."
+---
+
+Run this checklist before the domain points at the new store. A launch is a DNS change plus a test order, not a redesign. Most items are already configured at setup. You are confirming them.
+
+## Before you point DNS
+
+| Check | What good looks like |
+| --- | --- |
+| Store name, phone, address | Match the FFL record and the footer |
+| Policies | Terms, privacy, refund, shipping, and an FFL transfer policy in your words |
+| Payments | Gateway connected. One test authorization succeeds |
+| Shipping | Zones cover the states you sell to. Firearm classes do not offer home delivery |
+| FFL Checkout | A regulated test product forces dealer selection |
+| Catalog | At least one live product with photo, price, and UPC or SKU |
+| Domain | DNS records ready. Cloudflare proxy off on the shop host record if we flagged it |
+| Email | Order mail sends from your domain, not a default host address |
+
+## Test order
+
+1. Place a non-regulated accessory order to a real inbox you control.
+2. Place a regulated test item and select a transferring dealer.
+3. Confirm the order lands in WooCommerce and, if Cockpit is on, in the fulfillment queue.
+4. Refund or void the tests. Do not ship them.
+
+## Go live
+
+1. Confirm the password or coming-soon gate is off only when the checks above pass.
+2. Point the domain. Allow DNS to settle.
+3. Load the storefront on a phone that is not logged into wp-admin.
+4. Watch the first real orders the same day. Reply to transfer questions yourself until the pattern is obvious.
+
+If a check fails, do not cut DNS. Open a ticket with the failed row and a screenshot.
+
+<Card title="How WooCommerce sells guns on this stack" icon="arrow-up-right" href="https://www.coriolisagency.com/can-you-use-woocommerce-to-sell-guns">
+  Compliance context for the store you are launching.
+</Card>

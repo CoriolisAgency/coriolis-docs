@@ -1,0 +1,30 @@
+---
+title: "Connect a firearms-friendly card processor"
+description: "Connect a merchant account that allows firearm sales to a Coriolis WooCommerce store. Stripe, PayPal, Square, and WooPayments are not an option."
+---
+
+WooCommerce will take cards. The processors that will not are Stripe, PayPal, Square, and WooPayments. Those networks prohibit firearm sales. You connect a merchant account approved for firearms, then Coriolis places that gateway on checkout.
+
+## What works
+
+Use a processor that already underwrites FFLs. Coriolis uses GOAT Payments, or you can bring your own firearms-approved gateway. A generic high-risk account from a processor that has not approved firearm inventory will freeze on the first gun order. Get the approval before you connect keys.
+
+You need:
+
+- A live merchant account in your store's legal name.
+- API credentials from that processor. Coriolis sets up GOAT Payments; if you bring your own gateway, use the keys it issues. Sandbox keys are for a test install only.
+- The gateway plugin Coriolis installs. Do not add a second card plugin beside it. Two gateways fighting at checkout drops orders.
+
+## Connect it
+
+1. Confirm the account is approved for the products you sell (firearms, ammunition, or both). Ask the processor if you are not sure.
+2. Send the API credentials to Coriolis through the support channel, not email in the clear if you can avoid it. We store them on the install.
+3. Coriolis enables the gateway and runs a small live authorization, then voids it.
+4. Place a test order for a non-firearm product with a real card. Confirm the charge lands in the processor portal, then void or refund it.
+5. Place a second test with a firearm in the cart only after ship-to-FFL is on. The card test and the FFL test are separate.
+
+## What this does not do
+
+The gateway charges the card. It does not check a 4473, run a background check, or pick the receiving dealer. Those are checkout and transfer steps, not payment steps. If a charge is declined, the decline reason is in the processor portal. Coriolis can see the WooCommerce order. The processor owns the response code.
+
+Why this stack can sell guns at all is covered in [can you use WooCommerce to sell guns](https://www.coriolisagency.com/can-you-use-woocommerce-to-sell-guns).

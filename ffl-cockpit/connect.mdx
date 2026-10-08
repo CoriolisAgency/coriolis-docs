@@ -1,0 +1,27 @@
+---
+title: "Connect FFL Cockpit to WooCommerce"
+description: "Connect FFL Cockpit to the WooCommerce store Coriolis hosts, using a REST key with read and write."
+---
+
+FFL Cockpit connects to your WooCommerce store with a REST API key. On a Coriolis install this is done at setup when the plan includes Cockpit. You only redo it if the key was revoked or the store URL changed. Cockpit is the catalog and checkout plugin. It is not the website.
+
+## Generate the key
+
+1. In wp-admin open WooCommerce, then Settings, then Advanced, then REST API.
+2. Add a key. Description: `FFL Cockpit`. User: a shop manager or administrator account that you do not share.
+3. Permissions: Read/Write. Read-only will import nothing and will not write orders back.
+4. Copy the consumer key and secret once. WordPress does not show the secret again.
+
+## Hand it to Cockpit
+
+Send the store URL, the consumer key, and the secret to Coriolis through support. We place them in Cockpit. Do not put the secret in a page or a ticket screenshot that other staff can forward.
+
+After the key is in:
+
+- A test read should list products.
+- A distributor you already have credentials for can start a catalog sync.
+- FFL Checkout should see the store's shipping classes.
+
+The Cockpit license lives on the plugin vendor's site, not in this doc. Button-level help for the Cockpit UI stays in the vendor help center. This page is the connection on the managed stack.
+
+Cockpit on a Coriolis store is covered on [FFL Cockpit](https://www.coriolisagency.com/ffl-cockpit). Included on Militia and above. The plan list is on the ecommerce page. Do not look for prices here.

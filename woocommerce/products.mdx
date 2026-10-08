@@ -1,0 +1,21 @@
+---
+title: "Add a product on a Coriolis WooCommerce store"
+description: "Add a local product in WooCommerce, flag it if it must ship to an FFL, and keep distributor imports in FFL Cockpit."
+---
+
+A product you stock in the shop is a WooCommerce product. A product you dropship from a distributor is imported in FFL Cockpit, then published to WooCommerce. Do not hand-build a Lipsey's or Sports South SKU in Products if Cockpit is already syncing it. You will create a duplicate and the price will drift.
+
+## Add a local product
+
+1. In wp-admin open Products, then Add new.
+2. Title is what the buyer searches. Include the model and caliber. Do not stuff the title with the store name.
+3. Set a regular price. If the item is MAP-restricted, the price you type must respect the distributor's MAP. Cockpit enforces MAP on imported rows. It does not police a product you typed by hand.
+4. Set the shipping class. Firearm class if it must go to an FFL. Ammunition class if you separate ammo. Default class for accessories that ship home.
+5. Add a real photo. A catalog image with a distributor watermark reads as unfinished.
+6. Publish only after the shipping class and the FFL flag match. A firearm published as a simple accessory will offer home delivery.
+
+## FFL flag
+
+If the item cannot ship to the buyer's house, mark it FFL-required in the product data and in FFL Cockpit if the SKU also exists there. Checkout uses that flag to show the dealer selector. A missed flag is a bad shipment, not a theme bug.
+
+Distributor catalog imports are a Cockpit task. See [import a distributor catalog](/ffl-cockpit/catalog-import). The dropshipping overview is on [firearms dropshipping](https://www.coriolisagency.com/firearms-dropshipping).

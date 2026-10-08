@@ -1,0 +1,20 @@
+---
+title: "Sync AIM POS with WooCommerce"
+description: "How AIM POS inventory syncs with a Coriolis WooCommerce store, and what the sync does not do."
+---
+
+AIM POS sync keeps serialized inventory and in-stock quantity aligned between the register and the WooCommerce store. A gun sold on the floor drops off the site. A gun sold on the site is no longer available at the counter. Coriolis maps the sync at setup when the plan includes it. AIM is the first register we document. Other registers are separate pages.
+
+## What you confirm
+
+1. AIM is on a version Coriolis has already connected for your store. Do not upgrade AIM the morning of a launch without telling us.
+2. The location you sell from online is the location mapped in the sync. A second warehouse that is not mapped will not publish.
+3. Serialized items use the AIM serial as the source. Do not retype serials into WooCommerce.
+4. Place a counter sale in AIM for a test SKU that is also published. Refresh the product on the site. Quantity or availability should move.
+5. Place a web test order for a different test SKU. It should land in AIM as a web order, not as a second product.
+
+## What the sync does not do
+
+The sync does not file a 4473, run a background check, or replace your bound book. Transfer paperwork stays in the system you already use for that. Range-specific features that are not in your current mapping are not implied by this page. If a field you expect is empty, ask before you assume it is broken.
+
+Included on Warlord and above. Warlord includes API sync with any POS that supports WooCommerce, AIM included. Plan details stay on the [ecommerce page](https://www.coriolisagency.com/ecommerce). The integration overview is on [AIM POS](https://www.coriolisagency.com/aim-pos).

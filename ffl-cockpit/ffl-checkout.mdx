@@ -1,0 +1,24 @@
+---
+title: "Turn on FFL Checkout"
+description: "Turn on FFL Checkout so a regulated cart asks the buyer to pick a receiving dealer."
+---
+
+FFL Checkout is the dealer selector at checkout. When a cart has an item flagged FFL-required, the buyer searches for a receiving FFL and the order stores that dealer. You ship the firearm there. Accessories follow the shipping class you set. This is configured at setup on plans that include Cockpit. Use this page to confirm it, not to rebuild it.
+
+## Confirm it is on
+
+1. Open a private window and add a product you know is FFL-required.
+2. Go to checkout. You should see an FFL search before payment. A cart with only accessories should not force it.
+3. Pick a dealer. Place a test order with a test card or a voided authorization.
+4. Open the order in WooCommerce. The receiving dealer and the transfer address should be on the order, not only in a note.
+5. If Cockpit fulfillment is on, the same dealer should show on the fulfillment record.
+
+## If the selector is missing
+
+- The product is not flagged FFL-required. Fix the flag in the product and in Cockpit if the SKU is imported.
+- A theme edit removed the checkout block. See [theme edits](/woocommerce/theme-edits). Put the block back before you take a live firearm order.
+- Shipping classes are wrong, so the cart never looks regulated. See [ship-to-FFL shipping](/woocommerce/shipping-and-ship-to-ffl).
+
+FFL Checkout does not file a transfer form and does not replace your bound book. It picks the dealer and stores the address.
+
+Product context is on [FFL Cockpit](https://www.coriolisagency.com/ffl-cockpit).

@@ -1,0 +1,30 @@
+---
+title: "Point your domain at the Coriolis store"
+description: "How to point the domain you own at the WooCommerce store Coriolis hosts, and what DNS changes to expect."
+---
+
+You own the domain. Coriolis hosts the WooCommerce store on WP Engine and sends you the DNS records at setup. Pointing the domain is a registrar change, not a rebuild. The site stays on your domain if you leave.
+
+## What you need before you start
+
+- Login to the registrar that holds the domain (GoDaddy, Cloudflare, Namecheap, or whoever you bought it from).
+- The DNS records from your Coriolis setup note. Do not guess the target. WP Engine issues a specific CNAME or A record for the install.
+- A decision on the hostname customers will see. Most stores use the apex (`yourstore.com`) or `www`. Pick one and redirect the other.
+
+## Point the domain
+
+1. Open the DNS zone for the domain at your registrar or at Cloudflare if the nameservers already point there.
+2. Add the record Coriolis sent. Typically a CNAME on `www` to the WP Engine target, plus an apex record if your DNS host supports CNAME flattening or an A record.
+3. Remove conflicting A or CNAME records on the same hostname. Two records on one name is the usual reason a cutover hangs.
+4. Set the other hostname to redirect to the primary. If customers should land on `yourstore.com`, redirect `www` to it, or the reverse.
+5. Tell Coriolis the records are in. We attach the domain on the install and confirm the certificate.
+
+DNS usually moves in under an hour. Some registrars cache for longer. Do not change nameservers unless Coriolis asked you to. Changing nameservers drops mail and any other records in that zone.
+
+## After it resolves
+
+- Open the store URL in a private window. You should see your store, not the registrar parking page.
+- Coriolis issues the SSL certificate on the install. If the browser warns about the certificate, wait for that step before sending traffic.
+- Leave email DNS alone (MX, SPF, DKIM). Pointing the website does not move your mail.
+
+Plan details and what is included at setup live on the [ecommerce plans](https://www.coriolisagency.com/ecommerce) page.

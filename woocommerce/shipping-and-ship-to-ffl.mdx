@@ -1,0 +1,27 @@
+---
+title: "Set ship-to-FFL shipping"
+description: "Shipping classes and FFL Checkout on a Coriolis WooCommerce store so a firearm ships only to a receiving FFL."
+---
+
+A firearm in the cart ships to a receiving FFL, not to the buyer's house. Accessories can ship home. FFL Checkout is the dealer selector on the Coriolis store. Shipping classes tell WooCommerce which rate applies to which product. Both have to be set or the wrong thing ships to the wrong place.
+
+## Set the classes
+
+1. In WooCommerce, open Products and confirm the firearm products are in the firearm shipping class Coriolis created at setup. Do not invent a second class with a similar name.
+2. Put ammunition in the ammunition class if the store separates it. Carriers treat ammunition differently from accessories. Ground only is the normal rule.
+3. Leave accessories in the default class so they can ship to the customer.
+4. Open WooCommerce, then Settings, then Shipping. Zones should match where you actually ship. A zone with no rate will block checkout for that state.
+5. Confirm the firearm method does not offer home delivery. If a flat rate is attached to the firearm class and the destination is the customer, that is a misconfiguration. Tell Coriolis before you take a live order.
+
+## Turn on the dealer selector
+
+FFL Checkout adds the FFL search at checkout when a regulated item is in the cart. The buyer picks the receiving dealer. The order stores that dealer. You ship the firearm to that FFL, not to the billing address.
+
+1. Confirm FFL Checkout is active. On a Coriolis store this is configured at setup when the plan includes it.
+2. Place a test order with one firearm and one accessory. Checkout should ask for an FFL for the firearm and should still allow the accessory to follow the rules you set.
+3. Read the order. The receiving FFL should be on the order, with the transfer address, not only in a customer note.
+4. If the selector does not appear, the product is probably not flagged as FFL-required. That flag lives on the product and in FFL Cockpit. Fix the flag before you blame the theme.
+
+Carrier rules still apply. Read the carrier's firearm and ammunition policy before you publish a rate. A zone rate does not override a carrier that will not move handguns by air.
+
+The compliance path this sits on is [can you use WooCommerce to sell guns](https://www.coriolisagency.com/can-you-use-woocommerce-to-sell-guns).

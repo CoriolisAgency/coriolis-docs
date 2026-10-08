@@ -1,0 +1,27 @@
+---
+title: "Import a distributor catalog"
+description: "Import a distributor catalog into FFL Cockpit, with Sports South as the reference path, then publish to WooCommerce."
+---
+
+Distributor products enter through FFL Cockpit, not through a WooCommerce CSV. Cockpit pulls the catalog, applies your markup and MAP, and publishes the rows you select to the store. Sports South is the reference path below. Lipsey's, RSR, and the other connected distributors follow the same shape with different credentials.
+
+## Before the first import
+
+- The distributor has approved your dealer account and issued API or FTP credentials.
+- FFL Cockpit is connected to this WooCommerce store. See [connect FFL Cockpit](/ffl-cockpit/connect).
+- You know your default markup. MAP still wins when the distributor sends a MAP price. Cockpit will not publish below MAP on a mapped row.
+
+## Import
+
+1. Open FFL Cockpit and the distributor screen Coriolis enabled at setup.
+2. Enter the credentials the distributor gave you. Coriolis does not have these unless you sent them.
+3. Run the first sync. The first pull is the slow one. Later syncs are inventory and price.
+4. Filter to in-stock, pick a brand or category, and import a small set first. Do not publish the entire catalog on day one.
+5. Confirm the imported rows landed as products you can find in WooCommerce, with the firearm shipping class if the row is a firearm.
+6. Spot-check three prices against the distributor portal. Markup and MAP should both be visible in Cockpit.
+
+## After import
+
+Inventory sync keeps quantity and price moving. It does not write your product descriptions. Edit copy in WooCommerce if you want it in your voice, and do not re-import in a mode that overwrites that copy. If a sync overwrites descriptions, stop and tell Coriolis which distributor. That is a mapping fix, not a theme fix.
+
+Dropshipping on this stack is covered on [firearms dropshipping](https://www.coriolisagency.com/firearms-dropshipping).

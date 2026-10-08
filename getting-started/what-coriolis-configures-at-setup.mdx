@@ -1,0 +1,39 @@
+---
+title: "What Coriolis configures at setup"
+description: "What Coriolis sets up on a managed WooCommerce store before you take the keys, and what stays yours."
+---
+
+Coriolis configures the store at setup so you are not assembling WooCommerce, FFL Cockpit, and hosting from scratch. You own the site, the domain, and the customer list. We install and wire the stack, then hand you a store you can run.
+
+## What you own
+
+The public store is WooCommerce on your domain. Theme, pages, and product copy live there. FFL Cockpit is the operations plugin for distributor catalogs, FFL Checkout, and order routing. It is not the storefront. Licenses for Cockpit stay with the plugin vendor. Hosting and support stay with Coriolis.
+
+## What we configure
+
+At setup we handle the parts that break a gun-store launch if they are guessed:
+
+- WooCommerce on your domain, with Kadence as the theme base
+- Core pages: home, shop, cart, checkout, policies
+- Shipping classes that separate standard goods from items that must ship to an FFL
+- FFL Checkout so the buyer picks a transferring dealer when the cart requires it
+- FFL Cockpit connected, with the distributor accounts you already have
+- Payment gateway credentials you provide, tested with a small live or sandbox order
+- DNS cutover when you are ready to point the domain
+- Backups and the hosting environment for the plan you are on
+
+POS sync is configured when you are on a plan that includes it and the register is one we support (AIM first). GunSearchEngine is a separate install step, not part of store setup.
+
+## What you still do
+
+You approve policy language, send gateway and distributor credentials, and confirm the FFL data on the store. You write the product titles and descriptions buyers actually read. We do not invent your transfer policy or your MAP exceptions.
+
+## After handoff
+
+You can edit pages, products, and allowed theme settings. Structural changes (new distributor, checkout rule, POS mapping) go through support so the sync does not drift.
+
+Plan details and what each rung includes live on the ecommerce page. This page is the setup task, not the price list.
+
+<Card title="Plans and what setup includes" icon="arrow-up-right" href="https://www.coriolisagency.com/ecommerce">
+  See the plan ladder and setup on coriolisagency.com.
+</Card>
