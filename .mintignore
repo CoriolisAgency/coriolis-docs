@@ -1,0 +1,7 @@
+# Repo control files and scripts: not docs pages
+AGENTS.md
+BUILD-QUEUE.md
+DEPLOY.md
+LOCK.md
+TITLE-BLOCKLIST.md
+scripts/
