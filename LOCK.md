@@ -10,7 +10,7 @@ Frozen 2026-10-08. Do not reopen platform, host, or the title blocklist without 
 - Voice: peer over coffee. Name the tools (WooCommerce, Kadence, FFL Cockpit, AIM, GunSearchEngine). Compliance-first. Ownership stated once per page. No hype.
 - Out of lane: stand-alone bound-book pages, 4473 how-to, 4473 automation claims, “RetailBI alternative,” “switch off RetailBI.”
 - Pricing: do not restate the ladder. If a task must name a rung, use the frozen strings and link to `/ecommerce`. Minute Man $169, Militia $269, Gun Runner $369, Warlord $469, Accelerator $569. Setup $500 / $2,500. Do not invent Demand Intelligence prices.
-- Ads and the “FFL Accelerator” offer name stay on `fflaccelerator.com`. No new cross-links to that host. No UTMs.
+- Ads and the “FFL Accelerator” offer name stay on `fflaccelerator.com`. Links to fflaccelerator.com only per DOCS-2 (offer-name anchors only, never /lp/). No UTMs.
 - GunSearchEngine soaks Demand Intelligence. Docs may have operator install pages that link to `gunsearchengine.com`. No second DI marketing site.
 - `2abetsy.com` is not a door. `gunsearchagent.com` is retired. Do not link it.
 

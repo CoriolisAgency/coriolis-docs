@@ -23,7 +23,7 @@ Also reject:
 
 - A stand-alone bound-book or Form 4473 procedure
 - An H1 that names a plan price
-- Any link to `fflaccelerator.com` or `gunsearchagent.com`
+- Any link to `gunsearchagent.com`, and any fflaccelerator.com link outside the DOCS-2 map
 - A second Demand Intelligence marketing page
 
 Procedural phrases are fine: “migrate off AmmoReady checklist” as a task, linking up to `/ammoready-alternative`, is allowed. The comparison H1 is not.

@@ -28,7 +28,7 @@ Do not mount this at `coriolisagency.com/docs`. That host owns the commercial la
 ## 3. Search Console
 
 1. Add a property for `docs.coriolisagency.com`.
-2. Submit `https://docs.coriolisagency.com/sitemap-index.xml` (Mintlify’s index; `sitemap.xml` may 404).
+2. Submit `https://docs.coriolisagency.com/sitemap.xml` (Mintlify serves it at the root; `robots.txt` points to it).
 3. Inspect three URLs after the first deploy: `/`, `/woocommerce/shipping-and-ship-to-ffl`, `/ffl-cockpit/connect`.
 
 ## 4. Assistant and support
