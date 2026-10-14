@@ -45,3 +45,7 @@ Read `LOCK.md` before any change. It is the frozen v0.1 lock; do not reopen plat
 ## Deploy
 
 `DEPLOY.md`. Do not mount the docs at `coriolisagency.com/docs`; that host owns the commercial lattice.
+
+## Studio reporting
+
+Studio reporting: `.github/workflows/studio.yml` reports status to Botopticon via the shared reporter in CoriolisAgency/botopticon. It is status only. GitHub Actions never merge; merging stays with the agents/Paul. See the reporting rule in CoriolisAgency/botopticon AGENTS.md.
