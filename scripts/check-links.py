@@ -7,7 +7,7 @@ A = "https://www.coriolisagency.com"
 MAP = {
  "index": [("how the Coriolis stack fits", A+"/stack"), ("Coriolis AI Studio", A+"/ai-studio"), ("Gun Store Game", "https://www.gunstoregame.com/")],
  "getting-started/what-you-own": [("FFL website plans", A+"/ecommerce"), ("FFL Accelerator pricing", "https://fflaccelerator.com/plan/")],
- "getting-started/what-coriolis-configures-at-setup": [("FFL website plans and what setup includes", A+"/ecommerce"), ("gun store POS system", A+"/gun-store-pos"), ("managed FFL ecommerce", "https://fflaccelerator.com/")],
+ "getting-started/what-coriolis-configures-at-setup": [("FFL website plans and what setup includes", A+"/ecommerce"), ("the register you already run", A+"/gun-store-pos"), ("managed FFL ecommerce", "https://fflaccelerator.com/")],
  "getting-started/launch-checklist": [("Selling guns on WooCommerce", A+"/can-you-use-woocommerce-to-sell-guns"), ("email marketing for FFL ecommerce", A+"/email-marketing-for-ffl-ecommerce")],
  "woocommerce/domain-and-dns": [("gun store website plans", A+"/ecommerce")],
  "woocommerce/payments-for-ffl-woocommerce": [("can you use WooCommerce to sell guns", A+"/can-you-use-woocommerce-to-sell-guns"), ("WooCommerce vs Shopify for gun stores", A+"/woocommerce-vs-shopify-for-gun-stores")],
