@@ -10,7 +10,7 @@ Frozen 2026-10-08. Do not reopen platform, host, or the title blocklist without 
 - Voice: peer over coffee. Name the tools (WooCommerce, Kadence, FFL Cockpit, AIM, GunSearchEngine). Compliance-first. Ownership stated once per page. No hype.
 - Out of lane: stand-alone bound-book pages, 4473 how-to, 4473 automation claims, “RetailBI alternative,” “switch off RetailBI.”
 - Pricing: do not restate the ladder. If a task must name a rung, use the frozen strings and link to `/ecommerce`. Minute Man $169, Militia $269, Accelerator $569. Setup $500 / $2,500. Do not invent Demand Intelligence prices.
-- Ads and the “FFL Accelerator” offer name stay on `fflaccelerator.com`. Links to fflaccelerator.com only per DOCS-2 (offer-name anchors only, never /lp/), with no UTMs. Links to coriolisagency.com carry UTMs only where LINK-PLAN §2 names them: `utm_source=docs&utm_medium=referral&utm_campaign=docs-{guide}` (D-N6, Paul 9:01 PM ET). `scripts/check-links.py` checks the tag.
+- Ads and the “FFL Accelerator” offer name stay on `fflaccelerator.com`. Links to fflaccelerator.com only per DOCS-2 (offer-name anchors only, never /lp/). Docs links to coriolisagency.com, gunsearchengine.com, and fflaccelerator.com carry the D-N6 docs UTM `utm_source=docs&utm_medium=referral&utm_campaign=docs-{guide}` (2026-10-21-paul-answers-901 answer 8; 2026-10-26-seo-handoffs-gse-agency call (d)). The navbar Coriolis link uses `docs-footer` (call (c)). The logo href stays untagged. `scripts/check-links.py` checks the tag.
 - GunSearchEngine soaks Demand Intelligence. Docs may have operator install pages that link to `gunsearchengine.com`. No second DI marketing site.
 - `2abetsy.com` is not a door. `gunsearchagent.com` is retired. Do not link it.
 
